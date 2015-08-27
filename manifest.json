@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "No One of Note",
+    "description": "Obscures the names of those that need not be remembered.",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
